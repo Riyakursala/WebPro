@@ -26,14 +26,19 @@ if($conn->query($sql)===TRUE)
   if($result->num_rows > 0 )
   {
     while($row = $result->fetch_assoc()) {
-        echo "ID:" . $row["s_id"];
-                                        }
+      $id=row["s_id"];
+        $nw= "http://localhost/webpro/rd10".$id;
+       session_start();
+        $_SESSION['nu']=$nw;
+        $_SESSION['ou']=$url;
+        $_SESSION['id']=$id;                                  }
 }
+
+
 else {
     echo "0 results";
 }
 }
-
-
+header("LOCATION: new.php");
 ?>
 </html>
