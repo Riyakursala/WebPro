@@ -4,7 +4,7 @@ var mysql = require('mysql');
 
 const app=express();
 app.use(bodyParser.urlencoded({extended:true}));
-
+app.set('view engine', 'ejs');
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -27,8 +27,8 @@ app.post('/', function(req,res)
    {var m=rows.insertId;
      var id="http://localhost:3000/webpro/"+m;
 //Storage.setItem("url",id);
-
-      res.send(id);
+res.render('disp',{newUrl:id});
+      //res.send(id);
 }
 });
 });
