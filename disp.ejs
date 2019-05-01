@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<head><title>WebPro</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<style>
+.title{
+  color:#d65a31;
+  font-size: 1.7em;
+  padding-top: 7px;
+  padding-bottom: 15px;
+margin-bottom:0 auto;
+border-bottom: 0 auto;
+  background-color:	#222831;
+}
+.text{
+    color:	#eeeeee;
+}
+.content
+{ font-size:1.5em;
+  padding-top: 5px;
+  color:#085f63;
+  font-family: 'Titillium Web', sans-serif;
+  padding-left: 150px;
+}
+#strong{
+  color:#8b5d5d;
+  border-width: thin;
+  padding-top: 12px;
+  border-color: black;
+}
+</style>
+</head>
+<body>
+<div class="jumbotron text-center title">
+  <span class="title">WebPro</span>
+  <br>
+<p class="text">WebPro makes sharing links much more simpler.</p>
+</div>
+<div class="container content center">
+The new URl is generated for you. Just copy the link below and start sharing <br>
+<p  id ="strong"><strong><%=newUrl%></strong></p>
+</div>
+</body>
+</html>
